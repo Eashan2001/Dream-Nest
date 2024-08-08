@@ -1,0 +1,28 @@
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Nunito', sans-serif;
+}
+
+/* Ensure the html and body take up the full height of the viewport */
+html, body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Container should also fill the height and use flexbox */
+.container {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+/* Main content should expand to fill the remaining space */
+main {
+  flex: 1;
+}

@@ -1,0 +1,114 @@
+.register {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: url("/src/assets/register.jpg") center;
+  background-size: cover;
+}
+
+.register_container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  width: 90%;
+  max-width: 500px;
+  padding: 20px;
+  background-color: rgba(34, 33, 33, 0.8);
+  border-radius: 20px;
+}
+
+.register_container form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  width: 100%;
+}
+
+.register_container input[type="text"],
+.register_container input[type="email"],
+.register_container input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  background-color: transparent;
+  color: white;
+  outline: none;
+  text-align: center; /* Center the text horizontally */
+}
+
+.register_container input[type="text"]:focus,
+.register_container input[type="email"]:focus,
+.register_container input[type="password"]:focus {
+  border-bottom-color: white;
+}
+
+.register_container input::placeholder {
+  color: white;
+  text-align: center;
+  line-height: inherit; /* This ensures the placeholder text aligns with the input line */
+}
+
+.register_container label {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+  cursor: pointer;
+  color: white;
+}
+
+.register_container label img {
+  width: 25px;
+}
+
+.register_container button {
+  width: 100%;
+  max-width: 200px;
+  padding: 10px;
+  background-color: transparent;
+  border: 1px solid white;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+}
+
+.register_container button:hover {
+  background-color: rgba(119, 117, 117, 0.2);
+}
+
+.register_container a {
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+}
+
+.register_container a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (min-width: 768px) {
+  .register_container {
+    width: 70%;
+  }
+
+  .register_container button {
+    width: 50%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .register_container {
+    width: 50%;
+  }
+
+  .register_container button {
+    width: 40%;
+  }
+}

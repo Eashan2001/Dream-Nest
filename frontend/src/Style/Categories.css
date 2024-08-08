@@ -1,0 +1,85 @@
+/* Importing variables */
+@import "../Style/variable.css";
+/* Importing breakpoints */
+@import "../Style/breakpoint.css";
+
+.categories {
+  padding: 50px 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background-color: var(--lightgrey); /* Using CSS custom properties */
+
+  /* Media query for small screens */
+  @media (max-width: 480px) {
+    padding: 50px 20px;
+  }
+
+  h1 {
+    color: var(--blue); /* Using CSS custom properties */
+    font-size: 40px;
+    font-weight: 800;
+    margin-bottom: 15px;
+  }
+
+  p {
+    max-width: 700px;
+    font-size: 20px;
+  }
+
+  .categories_list {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 50px 0;
+    justify-content: space-around; /* Adjust this property according to your layout */
+    gap: 20px;
+  }
+
+  .categories_list a {
+    text-decoration: none;
+  }
+
+  .category {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 210px;
+    height: 180px;
+    cursor: pointer;
+  }
+
+  .category img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+  }
+
+  .category .overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.55);
+    transition: 0.3s ease-in-out;
+  }
+
+  .category_text {
+    position: relative;
+    color: white;
+  }
+
+  .category_text_icon {
+    font-size: 45px;
+  }
+
+  .category_text p {
+    font-weight: 600;
+  }
+
+  /* Hover effect */
+  .category:hover .overlay {
+    width: 80%;
+    height: 80%;
+  }
+}
