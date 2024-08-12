@@ -16,6 +16,7 @@ import Footer from "./components/Footer.jsx"
 
 
 
+
 function App() {
   return (
    <div>
@@ -40,7 +41,8 @@ function App() {
    
     </Routes>
     </BrowserRouter>
-    <Footer />
+    
+    
    </div>
   )
 }

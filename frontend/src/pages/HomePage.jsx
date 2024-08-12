@@ -3,7 +3,8 @@ import Navbar from '../components/Navbar'
 import Slide from "../components/Slide"
 import Categorie from '../components/Categorie'
 import Listings from '../components/Listings.jsx'
-import Footer from "../components/Footer";
+import Footer from '../components/Footer.jsx'
+
 
 function HomePage() {
   return (
@@ -12,7 +13,7 @@ function HomePage() {
    <Slide/>
    <Categorie/>
    <Listings/>
-    <Footer/>
+   <Footer/>
    </>
   )
 }

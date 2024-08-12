@@ -8,6 +8,7 @@ import ListingCard from "../components/ListingCard";
 
 
 
+
 const TripList = () => {
   const [loading, setLoading] = useState(true);
   const userId = useSelector((state) => state.user._id);
@@ -59,7 +60,7 @@ const TripList = () => {
           />
         ))}
       </div>
-  
+      
     </>
   );
 };

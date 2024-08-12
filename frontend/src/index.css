@@ -26,3 +26,45 @@ html, body {
 main {
   flex: 1;
 }
+
+/* Global styles (e.g., App.css) */
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+#root {
+  flex: 1;
+}
+
+/* Footer styles (e.g., Footers.css) */
+.footer {
+  background: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+.footer_left, .footer_center, .footer_right {
+  margin-bottom: 10px;
+}
+
+.footer_right_info {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.footer_right_info p {
+  margin-left: 10px;
+}
+
+.footer img {
+  width: 150px; /* Adjust as needed */
+}
+

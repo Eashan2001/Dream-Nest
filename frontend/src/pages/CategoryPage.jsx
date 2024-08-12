@@ -9,6 +9,7 @@ import ListingCard from "../components/ListingCard";
 
 
 
+
 const CategoryPage = () => {
   const [loading, setLoading] = useState(true);
   const { category } = useParams()
@@ -72,7 +73,7 @@ const CategoryPage = () => {
           )
         )}
       </div>
-    
+      
     </>
   );
 };

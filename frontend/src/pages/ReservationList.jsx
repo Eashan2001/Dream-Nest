@@ -8,6 +8,7 @@ import ListingCard from "../components/ListingCard";
 
 
 
+
 const ReservationList = () => {
   const [loading, setLoading] = useState(true);
   const userId = useSelector((state) => state.user._id);
@@ -43,7 +44,7 @@ const ReservationList = () => {
       <Navbar />
       <h1 className="title-list">Your Reservation List</h1>
       <div className="list">
-        {reservationList?.map(({ listingId, hostId, startDate, endDate, totalPrice, booking=true }) => (
+        {reservationList?.map(({ listingId, hostId, startDate, endDate, totalPrice }) => (
           <ListingCard
             listingId={listingId._id}
             creator={hostId._id}
@@ -55,16 +56,13 @@ const ReservationList = () => {
             startDate={startDate}
             endDate={endDate}
             totalPrice={totalPrice}
-            booking={booking}
+            booking={true}
           />
         ))}
-        
       </div>
-    
+      
     </>
-    
   );
 };
-
 
 export default ReservationList;
